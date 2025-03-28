@@ -13,7 +13,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
 
 // ✅ Firebase setup
 const admin = require("firebase-admin");
-const serviceAccount = require("./firebase-adminsdk.json"); // 🔥 Add your Firebase Admin SDK JSON file
+const serviceAccount = require("../firebase-adminsdk.json"); // 🔥 Add your Firebase Admin SDK JSON file
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

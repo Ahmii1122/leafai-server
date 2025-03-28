@@ -1,3 +1,7 @@
 [build]
   functions = "functions"
 
+  [functions]
+included_files = ["firebase-adminsdk.json"]
+
+
